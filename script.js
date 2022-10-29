@@ -70,19 +70,23 @@ const gameOver = () => {
   const timeTaken = Math.floor((finishTime - startTime) / 1000);
 
   // show result modal
+
   resultModal.innerHTML = "";
+
   resultModal.classList.toggle("hidden");
   modalBackground.classList.toggle("hidden");
+
   // clear user text
   display.innerHTML = "";
   // make it inactive
   display.classList.add("inactive");
   // show result
   resultModal.innerHTML += `
-    <h1>Finished!</h1>
-    <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
-    <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+ <h1>Finished!</h1>
+  <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
+  <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+  <button onclick="closeModal()">Close</button>
+    
   `;
 
   addHistory(questionText, timeTaken, errorCount);
