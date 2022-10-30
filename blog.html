@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="text-center mt-5 bg-warning text-light">Ans of all the Question</h1>
+
+    <div class="container mt-5">
+        <h1 class="text-center fw-bold">Local storage vs Session storage</h1>
+        <p class="mt-5">Session and local storage are browser storage methods that let you store data alongside stateless HTTP requests. They are an alternative to cookie-based storage and have many uses in web development.</p>
+        <p><span class="fw-bold">Session storage</span> is unique to each browser tab. If you open a new tab and navigate to the same site, you'll start a new session with its own storage. However, if you use a "duplicate tab" feature in your browser, that may reuse the same session. You can't rely too much on the specific details of a "session". Instead, focus on the core concept: session storage is temporary.</p>
+        <p><span class="fw-bold">Local storage</span> maintains data across all instances of a site, whether they're in different tabs or windows. It is also permanent, so the data won't disappear when you close your browser.</p>
+    </div>
+    <div class="container mt-5">
+        <h1 class="text-center fw-bold">Global scope vs Local scope</h1>
+        
+        <p><span class="fw-bold">Global scope</span>contains all of the things defined outside of all code blocks. A code block simply consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples of structure that create a code block. A global variable has global scope. A global variable is accessible from anywhere in the code.</p>
+        <p><span class="fw-bold">Local scope</span>contains things defined inside code blocks. A local variable has local scope. A local variable is only accessible where it’s declared.</p>
+    </div>
+    <div class="container mt-5">
+        <h1 class="text-center fw-bold">How Event loop works</h1>
+        <p><span class="fw-bold">The event loop</span> works by making a request to some internal or external "event provider" (that generally blocks the request until an event has arrived), then calls the relevant event handler ("dispatches the event").</p>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center fw-bold">How many ways to get Undefined</h1>
+        <p>A variable that has not been assigned a value is of type undefined . A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.</p>
+    </div>
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
