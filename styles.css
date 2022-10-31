@@ -197,3 +197,14 @@ button {
     flex-direction: column;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  #histories {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
+    grid-gap: 30px;
+    position: relative;
+
+  }
+}
